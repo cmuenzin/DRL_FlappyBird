@@ -4,7 +4,7 @@ from flappy_env import FlappyBirdEnv
 # Trainingsumgebung
 env = FlappyBirdEnv()
 model = PPO("MlpPolicy", env, verbose=1)
-model.learn(total_timesteps=100_000)
+model.learn(total_timesteps=10000000)
 
 # Speichern
 model.save("flappy_ppo")
